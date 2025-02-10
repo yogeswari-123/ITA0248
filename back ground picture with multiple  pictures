@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image and Repeat</title>
+    <link rel="stylesheet" href="15.css"> <!-- Linking External CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Web Page</h1>
+        <p>This page demonstrates the use of background images with different repeat properties.</p>
+    </div>
+</body>
+</html>
+
+CSS:
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(".vscode/f4.jpg"); /* Background Image */
+    background-repeat: repeat; /* Default - Repeats in both directions */
+    background-size: auto;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+/* Different Background Repeat Variations */
+.no-repeat {
+    background-repeat: no-repeat;
+}
+
+.repeat-x {
+    background-repeat: repeat-x;
+}
+
+.repeat-y {
+    background-repeat: repeat-y;
+}
